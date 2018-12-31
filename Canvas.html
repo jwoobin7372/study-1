@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>
+            캔버스
+        </title>
+    </head>
+    <body>
+        <canvas id="webgame" width="1000" height="1000">
+        </canvas>
+    </body>
+    <script>
+        const canvas = document.getElementById("webgame");
+        context = canvas.getContext("2d");
+        context.fillStyle = "blue"; 
+        context.strokeStyle = "red";
+        context.lineWidth = 125;
+        context.fillRect(135, 135, 500,500);
+        context.strokeRect(135, 135, 500, 500);
+    </script>
+</html>
